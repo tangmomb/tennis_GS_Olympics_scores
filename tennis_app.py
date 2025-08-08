@@ -78,5 +78,15 @@ if st.session_state.joueur_choisi:
 else:
     st.info("Veuillez sélectionner un joueur pour afficher les matchs.")
 
+# Identifier le vainqueur de la finale (round == "F") du tournoi et année sélectionnés
+finale = df_tournoi[df_tournoi["round"] == "F"]
+
+if not finale.empty:
+    vainqueur = finale.iloc[0]["winner_name"]
+    st.write(f" 🏆 Vainqueur du tournoi : **{vainqueur}**")
+else:
+    st.write(" 🏆 Vainqueur du tournoi : Non déterminé")
+
+
 # thanks to Jeff Sackmann
-st.markdown('<span style="text-decoration:none;color:#596377">thanks to git github.com/JeffSackmann</span>', unsafe_allow_html=True)
+st.markdown('<span style="text-decoration:none;color:#596377">thanks to github.com/JeffSackmann</span>', unsafe_allow_html=True)
