@@ -5,7 +5,8 @@ st.title("🎾 Grand Slams / Olympics")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv(r"recup\atp_grand_slam_2000_2024Filtre.csv")
+    return pd.read_csv("recup/atp_grand_slam_2000_2024Filtre.csv")
+
 
 df = load_data()
 
