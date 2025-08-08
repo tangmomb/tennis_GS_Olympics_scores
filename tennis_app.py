@@ -79,4 +79,4 @@ else:
     st.info("Veuillez sélectionner un joueur pour afficher les matchs.")
 
 # thanks to Jeff Sackmann
-st.markdown('<span style="text-decoration:none;color:#596377">thanks to github.com/JeffSackmann</span>', unsafe_allow_html=True)
+st.markdown('<span style="text-decoration:none;color:#596377">thanks to git github.com/JeffSackmann</span>', unsafe_allow_html=True)
